@@ -2,19 +2,6 @@
 
 A machine learning project that predicts house prices based on various features using Python (FastAPI) for the backend and React (Vite) for the frontend.
 
-## Project Structure
-
-```
-.
-├── backend/           # Python FastAPI backend
-│   └── main.py       # Main FastAPI application
-├── frontend/         # React Vite frontend
-│   ├── src/
-│   │   └── App.jsx   # Main React component
-│   └── package.json  # Frontend dependencies
-└── requirements.txt  # Python dependencies
-```
-
 ## Setup Instructions
 
 ### Backend Setup
@@ -22,7 +9,7 @@ A machine learning project that predicts house prices based on various features 
 1. Create a virtual environment (recommended):
 ```bash
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+venv\Scripts\activate
 ```
 
 2. Install Python dependencies:
@@ -65,11 +52,3 @@ The frontend will be available at `http://localhost:5173`
 
 - `GET /`: Welcome message
 - `POST /predict`: Predict house price based on input features
-
-## Note
-
-The current model uses sample data. For production use, you should:
-1. Replace the sample data with a real dataset
-2. Implement proper model training and validation
-3. Add more features to improve prediction accuracy
-4. Implement proper error handling and input validation 
